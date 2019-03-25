@@ -1,5 +1,10 @@
 # Práctica 1 - Diseño de modelo relacional
 
+Realizado por:
+
+* Francisco Rodríguez Cuenca
+* Alejadro Lozano Morales
+
 ## Ejercicio 1
 
 ### **Determinar el grado de normalización de estas dos relaciones, indicando las claves existentes. Se asume que el conjunto de dependencias L1 y L2 representan, de manera independiente, un recubrimiento mínimo y no redundante.**
