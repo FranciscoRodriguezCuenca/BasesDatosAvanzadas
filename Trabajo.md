@@ -4,6 +4,37 @@
 
 ### **Determinar el grado de normalización de estas dos relaciones, indicando las claves existentes. Se asume que el conjunto de dependencias L1 y L2 representan, de manera independiente, un recubrimiento mínimo y no redundante.**
 
+* Primera tabla
+
+    * Clasificación de atributos
+
+            Esenciales = {H,L}
+            Posibles = {C,A}
+            No posibles = {B,D,E,F,G,I,J,K,M,N,O,P,Q,R}
+
+    * Claves finales
+
+            Clave = HL
+
+    * Forma Normal
+
+            Primera forma normal ya que H → I, siendo H subclave
+
+* Segunda tabla
+
+    * Clasificación de atributos
+
+            Esenciales = {A,S}
+            Posibles = {C}
+            No posibles = {B,D,E,F,G,T,U,V,W}
+
+    * Claves finales
+
+            Clave = AS
+
+    * Forma Normal
+
+            Primera forma normal ya que A → C, siendo A subclave
 
 ## Ejercicio 2
 
