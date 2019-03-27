@@ -220,7 +220,6 @@ Realizado por:
 
     Sí está en FNBC (Clave: H)
 
-
 #### R2
 
 | T | L |
@@ -532,6 +531,58 @@ Realizado por:
 |H,L,S||
 
     Sí está en FNBC (Clave: HLS)
+
+##### Las soluciones son entonces R1,R3,R5,R7,R9,R11,R13,R15,R17,R19,R21,R23,R25,R27,R29,R31,R33,R35,R37,R39 y R40, que se pueden agrupar en las siguientes tablas:
+
+#### 1
+
+| T | L |
+| :---: |:---:|
+|H,I,J,K|H→I, H→J, H→K|
+
+#### 2
+
+| T | L |
+| :---: |:---:|
+|S,T|S→T|
+
+#### 3
+
+| T | L |
+| :---: |:---:|
+|B,C|C→B|
+
+#### 4
+
+| T | L |
+| :---: |:---:|
+|A,H,P,Q,R|AH→P, AH→Q, AH→R|
+
+#### 5
+
+| T | L |
+| :---: |:---:|
+|A,S,T,U,V,W|AS→U, AS→V, AS→W|
+
+#### 6
+
+| T | L |
+| :---: |:---:|
+|A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
+
+#### 7
+
+| T | L |
+| :---: |:---:|
+|A,H,L,M,N,O,S| L→M,L→N,L→O,L→A|
+
+#### 8
+
+| T | L |
+| :---: |:---:|
+|H,L,S||
+
+## Ejercicio 8
 
 ### **Normalizar R mediante el algoritmo de síntesis para conseguir un conjunto de relaciones que estén, al menos, en 3FN. Explicar los pasos dados y comparar el resultado con el punto 7.**
 
