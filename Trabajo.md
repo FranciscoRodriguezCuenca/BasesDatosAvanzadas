@@ -89,7 +89,7 @@ Realizado por:
 #### d. Obtener, para cada partido que haya jugado el o los equipo(s) en los que haya jugado el jugador Adam McQuaid, el identificador del equipo, el nombre del equipo, el año, mes y día del partido y el identificador de cada jugada realizada junto con su descripción (event) para cada una de las jugadas que haya realizado el equipo en cada partido (event) ordenadas por la fecha del partido
 
 ````sql
-    USE practica1bda;
+    USE practica1bda; 
     SELECT p.date_time,p.play_id,p.event, s1.teamName As NombreAgainst, s2.teamName AS NombreFor
     FROM primeratabla p
         INNER JOIN segundatabla s1 ON s1.team_id = p.team_id_against
@@ -581,6 +581,7 @@ Realizado por:
 | T | L |
 | :---: |:---:|
 |H,L,S||
+
 
 ## Ejercicio 8
 
