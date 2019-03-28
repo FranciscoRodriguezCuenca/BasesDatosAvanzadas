@@ -204,6 +204,16 @@ Realizado por:
 
 ### **Normalizar R hasta conseguir un conjunto de relaciones que estén en FNBC mediante el algoritmo de descomposición con LJ. Explicar todos los pasos dados.**
 
+![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-3.png "Primera Tabla")
+
+![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-4.png "Primera Tabla")
+
+![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-5.png "Primera Tabla")
+
+![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-1.png "Segunda Tabla")
+
+![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-2.png "Segunda Tabla")
+
 ## Ejercicio 8
 
 ### **Normalizar R mediante el algoritmo de síntesis para conseguir un conjunto de relaciones que estén, al menos, en 3FN. Explicar los pasos dados y comparar el resultado con el punto 7.**
