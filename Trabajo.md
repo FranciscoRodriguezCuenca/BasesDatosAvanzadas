@@ -512,15 +512,15 @@ Realizado por:
 
 | T | L |
 | :---: |:---:|
-|A,H,L,S|L→A|
+|A,L|L→A|
 
-    No está en FNBC ya que L→O siendo clave HLS
+    No está en FNBC ya que L→A siendo clave HLS
 
 #### R39
 
 | T | L |
 | :---: |:---:|
-|L,O|L→A|
+|L,A|L→A|
 
     Sí está en FNBC (Clave: L)
 
@@ -574,14 +574,13 @@ Realizado por:
 
 | T | L |
 | :---: |:---:|
-|A,H,L,M,N,O,S| L→M,L→N,L→O,L→A|
+|A,L,M,N,O| L→M,L→N,L→O,L→A|
 
 #### 8
 
 | T | L |
 | :---: |:---:|
 |H,L,S||
-
 
 ## Ejercicio 8
 
