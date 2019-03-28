@@ -1,14 +1,8 @@
 CREATE DATABASE  IF NOT EXISTS `practica1bda`;
 USE `practica1bda`;
 
--- Creación de la BD de la primera práctica de la asignatura de Bases de Datos Avanzadas
---
--- Host: 127.0.0.1    Database: practica1bda
--- ------------------------------------------------------
--- Server version	5.7.20-log
 
--- ATENCIÓN: Los ficheros csv deben estar en C:\EUI_PORTABLES\MySQL\Uploads
-DROP TABLE IF EXISTS `playteamplayertable`;
+DROP TABLE IF EXISTS `playplayertable`;
 DROP TABLE IF EXISTS `playtable`;
 DROP TABLE IF EXISTS `playergametable`;
 DROP TABLE IF EXISTS `teamgametable`;
@@ -17,6 +11,7 @@ DROP TABLE IF EXISTS `teamtable`;
 DROP TABLE IF EXISTS `timetable`;
 DROP TABLE IF EXISTS `playertable`;
 
+/*Previa creación de tablas incial*/
 CREATE TABLE `playertable` (
   `player_id` int,
   `firstName` varchar(25),
@@ -79,7 +74,6 @@ CREATE TABLE `playergametable` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
 CREATE TABLE `playtable` (
   `game_id` int,
   `play_id` varchar(25),
@@ -90,16 +84,6 @@ CREATE TABLE `playtable` (
   CONSTRAINT fk_game_id_playtable FOREIGN KEY (game_id) REFERENCES gametable(game_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
-CREATE TABLE `playteamplayertable` (
-  `play_id` varchar(25),
-  `team_id` int,
-  `player_id` int,
-  CONSTRAINT pk_playteamplayertable PRIMARY KEY(play_id,team_id,player_id),
-  CONSTRAINT fk_play_id_playteamplayertable FOREIGN KEY (play_id) REFERENCES playtable(play_id),
-  CONSTRAINT fk_team_id_playteamplayertable FOREIGN KEY (team_id) REFERENCES teamtable(team_id),
-  CONSTRAINT fk_player_id_playteamplayertable FOREIGN KEY (player_id) REFERENCES playertable(player_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /**Carga de datos*/
 INSERT INTO playertable
