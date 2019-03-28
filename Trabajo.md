@@ -205,14 +205,48 @@ Realizado por:
 ### **Normalizar R hasta conseguir un conjunto de relaciones que estén en FNBC mediante el algoritmo de descomposición con LJ. Explicar todos los pasos dados.**
 
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-3.png "Primera Tabla")
-
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-4.png "Primera Tabla")
-
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-5.png "Primera Tabla")
-
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-1.png "Segunda Tabla")
-
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-2.png "Segunda Tabla")
+
+##### Las soluciones son entonces R1,R3,R5,R7,R9,R11,R13,R15,R17,R19,R21,R23,R25,R27,R29,R31,R33,R35,R37,R39 y R40, que se pueden agrupar en las siguientes tablas:
+
+#### 1
+
+| T | L |
+| :---: |:---:|
+|H,I,J,K|H→I, H→J, H→K|
+
+#### 2
+
+| T | L |
+| :---: |:---:|
+|S,T|S→T|
+
+#### 3
+
+| T | L |
+| :---: |:---:|
+|B,C|C→B|
+
+#### 4
+
+| T | L |
+| :---: |:---:|
+|A,H,P,Q,R|AH→P, AH→Q, AH→R|
+
+#### 5
+
+| T | L |
+| :---: |:---:|
+|A,S,T,U,V,W|AS→U, AS→V, AS→W|
+
+#### 6
+
+| T | L |
+| :---: |:---:|
+|A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
 
 ## Ejercicio 8
 
