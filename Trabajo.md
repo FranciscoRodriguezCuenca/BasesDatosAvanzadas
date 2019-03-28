@@ -205,9 +205,13 @@ Realizado por:
 ### **Normalizar R hasta conseguir un conjunto de relaciones que estén en FNBC mediante el algoritmo de descomposición con LJ. Explicar todos los pasos dados.**
 
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-3.png "Primera Tabla")
+
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-4.png "Primera Tabla")
+
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-5.png "Primera Tabla")
+
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-1.png "Segunda Tabla")
+
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-2.png "Segunda Tabla")
 
 ##### Las soluciones se pueden agrupar en las siguientes tablas:
@@ -321,10 +325,11 @@ Realizado por:
 |A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
 |A,S,U,V,W|AS→U, AS→V, AS→W|
 
-
 ## Ejercicio 9
 
 ### **Dibujar un modelo entidad/relación que se corresponda con lo obtenido en el paso 7 y, si se encuentra alguna irregularidad, revisar el diseño obtenido realizando justificadamente los cambios que se estimen oportunos sin perder la normalización efectuada.**
+
+![alt text](diagrama.jpeg "Primera Tabla")
 
 ## Ejercicio 10
 
