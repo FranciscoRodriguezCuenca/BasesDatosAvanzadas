@@ -264,6 +264,29 @@ Realizado por:
 
 ### **Normalizar R mediante el algoritmo de síntesis para conseguir un conjunto de relaciones que estén, al menos, en 3FN. Explicar los pasos dados y comparar el resultado con el punto 7.**
 
+#### Primera Tabla
+
+
+
+##### Recubrimiento mínimo
+
+    El recubrimiento mínimo ya ewstá calculado y nos lo da el enunciado
+
+##### Cálculo claves
+
+    La clave de la primera tabla es HL
+
+##### Cálculo de la forma normal
+
+    Está en primera forma normal
+
+##### Agrupar dependencias que tengan el mismo implicante
+
+| T | L |
+| :---: |:---:|
+|H,I,J,K|H→I, H→J, H→K|
+
+
 ## Ejercicio 9
 
 ### **Dibujar un modelo entidad/relación que se corresponda con lo obtenido en el paso 7 y, si se encuentra alguna irregularidad, revisar el diseño obtenido realizando justificadamente los cambios que se estimen oportunos sin perder la normalización efectuada.**
