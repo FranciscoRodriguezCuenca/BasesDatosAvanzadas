@@ -93,15 +93,17 @@ INSERT INTO playertable
 
 
 INSERT INTO timetable
-    (SELECT s.season,s.date_time
+	(SELECT p.date_time,p.season
+	FROM primeratabla p
+    WHERE p.date_time IS NOT null
+    AND p.season IS NOT NULL
+    GROUP BY p.date_time,p.season)
+	UNION DISTINCT
+    (SELECT s.date_time,s.season
 	FROM segundatabla s
-	LEFT join primeratabla p ON s.date_time=p.date_time
-    WHERE s.date_time IS NOT NULL)
-	UNION
-	(SELECT p.season,p.date_time
-	FROM primeratabla p 
-	right join segundatabla s  ON s.date_time=p.date_time
-    WHERE p.date_time IS NOT NULL);
+    WHERE s.date_time IS NOT null
+    AND s.season IS NOT NULL
+    GROUP BY s.date_time,s.season);
     
     
 INSERT INTO teamtable
@@ -111,14 +113,12 @@ INSERT INTO teamtable
 
 INSERT INTO gametable
 	(SELECT s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals
-		FROM segundatabla s
-		LEFT join primeratabla p ON s.game_id=p.game_id
-		WHERE s.game_id IS NOT NULL)
-	UNION
-		(SELECT p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals
-		FROM primeratabla p 
-		right join segundatabla s  ON s.game_id=p.game_id
-    WHERE p.game_id IS NOT NULL);
+	FROM segundatabla s
+    GROUP BY s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals)
+	UNION DISTINCT
+	(SELECT p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals
+	FROM primeratabla p
+    GROUP BY p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals);
     
 
 INSERT INTO teamgametable
