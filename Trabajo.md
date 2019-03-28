@@ -210,7 +210,7 @@ Realizado por:
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-1.png "Segunda Tabla")
 ![alt text](NormalizacionDescomposicion/NormalizacionDescomposicion-2.png "Segunda Tabla")
 
-##### Las soluciones son entonces R1,R3,R5,R7,R9,R11,R13,R15,R17,R19,R21,R23,R25,R27,R29,R31,R33,R35,R37,R39 y R40, que se pueden agrupar en las siguientes tablas:
+##### Las soluciones se pueden agrupar en las siguientes tablas:
 
 #### 1
 
@@ -246,7 +246,19 @@ Realizado por:
 
 | T | L |
 | :---: |:---:|
+|A,L,M,N,O| L→M, L→N, L→O, L→A|
+
+#### 7
+
+| T | L |
+| :---: |:---:|
 |A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
+
+#### 8
+
+| T | L |
+| :---: |:---:|
+|H,L| |
 
 ## Ejercicio 8
 
