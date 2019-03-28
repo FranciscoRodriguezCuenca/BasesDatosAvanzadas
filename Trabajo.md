@@ -240,7 +240,7 @@ Realizado por:
 
 | T | L |
 | :---: |:---:|
-|A,S,T,U,V,W|AS→U, AS→V, AS→W|
+|A,S,U,V,W|AS→U, AS→V, AS→W|
 
 #### 6
 
@@ -266,11 +266,13 @@ Realizado por:
 
 #### Primera Tabla
 
-
+| T | L |
+| :---: |:---:|
+|A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R| A→C,A→D,A→E,A→F,A→G,C→B,H→I,H→J,H→K,L→M,L→N,L→O,L→A, AH→P,AH→Q,AH→R|
 
 ##### Recubrimiento mínimo
 
-    El recubrimiento mínimo ya ewstá calculado y nos lo da el enunciado
+    El recubrimiento mínimo ya está calculado y nos lo da el enunciado
 
 ##### Cálculo claves
 
@@ -285,6 +287,39 @@ Realizado por:
 | T | L |
 | :---: |:---:|
 |H,I,J,K|H→I, H→J, H→K|
+|B,C|C→B|
+|A,H,P,Q,R|AH→P, AH→Q, AH→R|
+|A,L,M,N,O| L→M, L→N, L→O, L→A|
+|A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
+|S,T|S→T|
+
+#### Segunda Tabla
+
+| T | L |
+| :---: |:---:|
+|A,B,C,D,E,F,G,S,T,U,V,W| A→C,A→D,A→E,A→F,A→G,C→B,S→T,AS→U,AS→V,AS→W |
+|A,S,T,U,V,W|AS→U, AS→V, AS→W|
+
+
+##### Recubrimiento mínimo
+
+    El recubrimiento mínimo ya está calculado y nos lo da el enunciado
+
+##### Cálculo claves
+
+    La clave de la primera tabla es AS
+
+##### Cálculo de la forma normal
+
+    Está en primera forma normal
+
+##### Agrupar dependencias que tengan el mismo implicante
+
+| T | L |
+| :---: |:---:|
+|B,C|C→B|
+|A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
+|A,S,U,V,W|AS→U, AS→V, AS→W|
 
 
 ## Ejercicio 9
