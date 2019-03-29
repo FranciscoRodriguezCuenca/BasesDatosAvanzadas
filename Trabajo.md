@@ -2,8 +2,8 @@
 
 Realizado por:
 
-* Francisco Rodríguez Cuenca
-* Alejadro Lozano Morales
+* Francisco Rodríguez Cuenca - bn0171
+* Alejadro Lozano Morales - bn0203
 
 ## Ejercicio 1
 
