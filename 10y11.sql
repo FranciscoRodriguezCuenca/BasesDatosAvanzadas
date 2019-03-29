@@ -105,11 +105,11 @@ INSERT INTO teamtable (team_id,teamName)
 	GROUP BY team_id,teamName);
 
 INSERT INTO gametable(game_id,date_time,home_team_id,away_team_id,home_goals,away_goals)
-	(SELECT s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals
+	(SELECT DISTINCT s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals
 	FROM segundatabla s
     GROUP BY s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals)
-	UNION DISTINCT
-	(SELECT p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals
+	UNION
+	(SELECT DISTINCT p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals
 	FROM primeratabla p
     GROUP BY p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals);
     
