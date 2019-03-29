@@ -86,32 +86,25 @@ CREATE TABLE `playtable` (
 
 
 /**Carga de datos*/
-INSERT INTO playertable
+INSERT INTO playertable(player_id,firstName,lastName,nationality)
     (SELECT player_id,firstName,lastName,nationality
 	FROM primeratabla
 	GROUP BY player_id,firstName,lastName,nationality);
 
-
-INSERT INTO timetable
-	(SELECT p.date_time,p.season
-	FROM primeratabla p
-    WHERE p.date_time IS NOT null
-    AND p.season IS NOT NULL
-    GROUP BY p.date_time,p.season)
-	UNION DISTINCT
-    (SELECT s.date_time,s.season
-	FROM segundatabla s
-    WHERE s.date_time IS NOT null
-    AND s.season IS NOT NULL
-    GROUP BY s.date_time,s.season);
+INSERT INTO timetable (date_time, season)
+	(SELECT DISTINCT p.date_time,p.season
+	FROM primeratabla p)
+	UNION
+    (SELECT DISTINCT s.date_time,s.season
+	FROM segundatabla s);
     
     
-INSERT INTO teamtable
+INSERT INTO teamtable (team_id,teamName)
 	(SELECT team_id,teamName
 	FROM segundatabla
 	GROUP BY team_id,teamName);
 
-INSERT INTO gametable
+INSERT INTO gametable(game_id,date_time,home_team_id,away_team_id,home_goals,away_goals)
 	(SELECT s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals
 	FROM segundatabla s
     GROUP BY s.game_id,s.date_time,s.home_team_id,s.away_team_id,s.home_goals,s.away_goals)
@@ -121,19 +114,19 @@ INSERT INTO gametable
     GROUP BY p.game_id,p.date_time,p.home_team_id,p.away_team_id,p.home_goals,p.away_goals);
     
 
-INSERT INTO teamgametable
+INSERT INTO teamgametable(game_id,team_id,tgoals,tshots,thits)
 	(SELECT game_id,team_id,tgoals,tshots,thits
 	FROM segundatabla
 	GROUP BY game_id,team_id,tgoals,tshots,thits);
     
     
-INSERT INTO playergametable
+INSERT INTO playergametable(game_id,player_id,assists,goals,shots)
     (SELECT game_id,player_id,assists,goals,shots
 	FROM primeratabla
 	GROUP BY game_id,player_id,assists,goals,shots);
 
 
-INSERT INTO playtable
+INSERT INTO playtable(game_id,play_id,team_id_for,team_id_against,event)
 	(SELECT game_id,play_id,team_id_for,team_id_against,event
 	FROM  primeratabla
 	GROUP BY game_id,play_id,team_id_for,team_id_against,event);
