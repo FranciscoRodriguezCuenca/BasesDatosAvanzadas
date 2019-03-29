@@ -216,52 +216,15 @@ Realizado por:
 
 ##### Las soluciones se pueden agrupar en las siguientes tablas:
 
-#### 1
-
 | T | L |
 | :---: |:---:|
 |H,I,J,K|H→I, H→J, H→K|
-
-#### 2
-
-| T | L |
-| :---: |:---:|
 |S,T|S→T|
-
-#### 3
-
-| T | L |
-| :---: |:---:|
 |B,C|C→B|
-
-#### 4
-
-| T | L |
-| :---: |:---:|
 |A,H,P,Q,R|AH→P, AH→Q, AH→R|
-
-#### 5
-
-| T | L |
-| :---: |:---:|
 |A,S,U,V,W|AS→U, AS→V, AS→W|
-
-#### 6
-
-| T | L |
-| :---: |:---:|
 |A,L,M,N,O| L→M, L→N, L→O, L→A|
-
-#### 7
-
-| T | L |
-| :---: |:---:|
 |A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
-
-#### 8
-
-| T | L |
-| :---: |:---:|
 |H,L| |
 
 ## Ejercicio 8
@@ -325,6 +288,18 @@ Realizado por:
 |A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
 |A,S,U,V,W|AS→U, AS→V, AS→W|
 
+Al final agrupando las tablas creadas sale el siguiente resultado:
+
+| T | L |
+| :---: |:---:|
+|B,C|C→B|
+|A,C,D,E,F,G| A→C, A→D, A→E, A→F, A→G|
+|A,S,U,V,W|AS→U, AS→V, AS→W|
+|H,I,J,K|H→I, H→J, H→K|
+|A,H,P,Q,R|AH→P, AH→Q, AH→R|
+|A,L,M,N,O| L→M, L→N, L→O, L→A|
+|S,T|S→T|
+
 ## Ejercicio 9
 
 ### **Dibujar un modelo entidad/relación que se corresponda con lo obtenido en el paso 7 y, si se encuentra alguna irregularidad, revisar el diseño obtenido realizando justificadamente los cambios que se estimen oportunos sin perder la normalización efectuada.**
@@ -334,6 +309,8 @@ Realizado por:
 ## Ejercicio 10
 
 ### **Escribir un script SQL para crear las tablas resultantes ya normalizadas y revisadas del punto 9, con sus correspondientes claves primarias y foráneas en la base de datos “practica1bda”.**
+
+
 
 ## Ejercicio 11
 
