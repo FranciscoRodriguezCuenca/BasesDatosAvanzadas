@@ -130,5 +130,3 @@ INSERT INTO playtable(game_id,play_id,team_id_for,team_id_against,event)
 	(SELECT game_id,play_id,team_id_for,team_id_against,event
 	FROM  primeratabla
 	GROUP BY game_id,play_id,team_id_for,team_id_against,event);
-    
-/*Falta insert de la ultima tabla, duda*/
